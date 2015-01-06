@@ -1,6 +1,12 @@
 [![Build Status][travis-image]][travis-link]
 # Rust by Example
 
+## 中文版在线预览
+
+http://rustcc.github.io/rust-by-example/
+
+http://rust.cc/rust-by-example/
+
 ## 中文版译者注意
 
 请翻译修改 examples 目录及其子目录内的 input_zh-CN.md 文件，内容参考同目录下 input.md 文件内的英文（注意： input_zh-CN.md 内的英文很可能是旧版的，勿直接翻译）。请使用 UTF-8 编码存储中文文档，否则程序不能正确读取，导致最终生成英文版页面。

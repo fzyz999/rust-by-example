@@ -8,3 +8,11 @@
 
 *注意*：在 Rust 1.0 正式发布前，本书将跟随 Rust 的 nightly 版本（即每日构建版本）更新。请确认安装使用 nightly 版本，否则很可能在编译某些例子时遇到错误。
 
+<p>　</p> <p>　</p>
+
+<hr>
+
+主要翻译者：
+[Liigo](https://github.com/liigo)
+
+所有贡献者：[Contributors](https://github.com/rustcc/rust-by-example/graphs/contributors)

@@ -9,6 +9,7 @@ extern crate serialize;
 use std::os;
 use example::Example;
 use std::thread::Thread;
+use std::sync::mpsc::channel;
 
 mod example;
 mod file;
@@ -40,7 +41,7 @@ fn main() {
     }
 
     let mut entries = range(0, nexamples).map(|_| {
-        rx.recv()
+        rx.recv().unwrap()
     }).collect::<Vec<(Vec<uint>, String)>>();
 
     entries.sort_by(|&(ref i, _), &(ref j, _)| i.cmp(j));

@@ -3,8 +3,9 @@ use markdown::Markdown;
 use serialize::{Decodable,json};
 use std::iter::AdditiveIterator;
 use std::iter::repeat;
+use std::sync::mpsc::Sender;
 
-#[deriving(Decodable)]
+#[derive(Decodable)]
 pub struct Example {
     children: Option<Vec<Example>>,
     id: String,
@@ -68,7 +69,7 @@ impl Example {
                 },
             };
 
-        tx.send((number.clone(), entry));
+        let _ = tx.send((number.clone(), entry));
 
         match self.children {
             None => {},

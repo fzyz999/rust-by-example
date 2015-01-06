@@ -9,4 +9,3 @@ if [ -n "${lang}" ] ; then
 else
     cp examples/README.md stage/README.md
 fi
-

@@ -3,9 +3,8 @@
 
 ## 中文版在线预览
 
-http://rustcc.github.io/rust-by-example/
-
-http://rust.cc/rust-by-example/
+- http://rustcc.github.io/rust-by-example/
+- http://rust.cc/rust-by-example/
 
 ## 中文版译者注意
 

@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Lifetimes | Rust by Example</title>
+        <title>生命期 | 通过例子学习Rust</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 0.7.1">
@@ -16,7 +16,7 @@
         
     
     
-    <meta name="author" content="japaric">
+    <meta name="author" content="liigo">
     
     
     <link rel="next" href="./lifetime/borrow.html" />
@@ -38,12 +38,12 @@
 
 
         
-    <div class="book" data-github="japaric/rust-by-example" data-level="23" data-basepath="." data-revision="1414286571181">
+    <div class="book" data-github="liigo/rust-by-example" data-level="23" data-basepath="." data-revision="1420552078463">
     <div class="book-header">
     <!-- Actions Left -->
     <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
     
-    <a href="https://github.com/japaric/rust-by-example" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
+    <a href="https://github.com/liigo/rust-by-example" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
     
     <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
     <span id="font-settings-wrapper">
@@ -89,7 +89,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-spinner fa-spin"></i>
-        <a href="./" >Rust by Example</a>
+        <a href="./" >通过例子学习Rust</a>
     </h1>
 </div>
 
@@ -104,21 +104,21 @@
         
         
         <li>
-            <a href="https://github.com/japaric" target="blank" class="author-link">About the author</a>
+            <a href="https://github.com/liigo" target="blank" class="author-link">About the author</a>
         </li>
         
 
         
         
         <li>
-            <a href="https://github.com/japaric/rust-by-example/issues" target="blank" class="issues-link">Questions and Issues</a>
+            <a href="https://github.com/liigo/rust-by-example/issues" target="blank" class="issues-link">Questions and Issues</a>
         </li>
         
 
         
         
         <li>
-            <a href="https://github.com/japaric/rust-by-example/edit/master/examples/lifetime/input.md" target="blank" class="contribute-link">Edit and Contribute</a>
+            <a href="https://github.com/liigo/rust-by-example/edit/master/examples/lifetime/input.md" target="blank" class="contribute-link">Edit and Contribute</a>
         </li>
         
 
@@ -153,7 +153,7 @@
                         
                             <b>1.</b>
                         
-                         Hello World
+                         你好世界
                     </a>
                 
             
@@ -169,7 +169,7 @@
                         
                             <b>2.</b>
                         
-                         Formatted print
+                         格式化输出
                     </a>
                 
             
@@ -185,7 +185,7 @@
                         
                             <b>3.</b>
                         
-                         Literals and operators
+                         字面常量和操作符
                     </a>
                 
             
@@ -201,7 +201,7 @@
                         
                             <b>4.</b>
                         
-                         Variables
+                         变量
                     </a>
                 
             
@@ -218,7 +218,7 @@
                         
                             <b>4.1.</b>
                         
-                         Mutability
+                         可变性
                     </a>
                 
             
@@ -234,7 +234,7 @@
                         
                             <b>4.2.</b>
                         
-                         Scope and shadowing
+                         作用域和覆盖
                     </a>
                 
             
@@ -250,7 +250,7 @@
                         
                             <b>4.3.</b>
                         
-                         Declare first
+                         先声明再使用
                     </a>
                 
             
@@ -271,7 +271,7 @@
                         
                             <b>5.</b>
                         
-                         Types
+                         类型
                     </a>
                 
             
@@ -288,7 +288,7 @@
                         
                             <b>5.1.</b>
                         
-                         Casting
+                         转换
                     </a>
                 
             
@@ -304,7 +304,7 @@
                         
                             <b>5.2.</b>
                         
-                         Literals
+                         字面常量
                     </a>
                 
             
@@ -320,7 +320,7 @@
                         
                             <b>5.3.</b>
                         
-                         Inference
+                         推断
                     </a>
                 
             
@@ -336,7 +336,7 @@
                         
                             <b>5.4.</b>
                         
-                         Alias
+                         别名
                     </a>
                 
             
@@ -357,7 +357,7 @@
                         
                             <b>6.</b>
                         
-                         Expressions
+                         表达式
                     </a>
                 
             
@@ -373,7 +373,7 @@
                         
                             <b>7.</b>
                         
-                         If/else
+                         if和else
                     </a>
                 
             
@@ -389,7 +389,7 @@
                         
                             <b>8.</b>
                         
-                         Loop
+                         循环loop
                     </a>
                 
             
@@ -406,7 +406,7 @@
                         
                             <b>8.1.</b>
                         
-                         Nesting and labels
+                         嵌套和标签
                     </a>
                 
             
@@ -427,7 +427,7 @@
                         
                             <b>9.</b>
                         
-                         While
+                         循环while
                     </a>
                 
             
@@ -443,7 +443,7 @@
                         
                             <b>10.</b>
                         
-                         For and range
+                         for和range
                     </a>
                 
             
@@ -459,7 +459,7 @@
                         
                             <b>11.</b>
                         
-                         Functions
+                         函数
                     </a>
                 
             
@@ -476,7 +476,7 @@
                         
                             <b>11.1.</b>
                         
-                         Unused
+                         未用到
                     </a>
                 
             
@@ -497,7 +497,7 @@
                         
                             <b>12.</b>
                         
-                         Modules
+                         模块(Modules)
                     </a>
                 
             
@@ -514,7 +514,7 @@
                         
                             <b>12.1.</b>
                         
-                         Visibility
+                         可见性
                     </a>
                 
             
@@ -530,7 +530,7 @@
                         
                             <b>12.2.</b>
                         
-                         The `use` import
+                         导入
                     </a>
                 
             
@@ -546,7 +546,7 @@
                         
                             <b>12.3.</b>
                         
-                         `super` and `self`
+                         super和self
                     </a>
                 
             
@@ -562,7 +562,7 @@
                         
                             <b>12.4.</b>
                         
-                         File hierarchy
+                         文件层次
                     </a>
                 
             
@@ -583,7 +583,7 @@
                         
                             <b>13.</b>
                         
-                         Crates
+                         库(Crates)
                     </a>
                 
             
@@ -600,7 +600,7 @@
                         
                             <b>13.1.</b>
                         
-                         Library
+                         库
                     </a>
                 
             
@@ -637,7 +637,7 @@
                         
                             <b>14.</b>
                         
-                         Attributes
+                         属性(Attributes)
                     </a>
                 
             
@@ -654,7 +654,7 @@
                         
                             <b>14.1.</b>
                         
-                         Crates
+                         库
                     </a>
                 
             
@@ -713,7 +713,7 @@
                         
                             <b>15.</b>
                         
-                         Tuples
+                         元组(Tuples)
                     </a>
                 
             
@@ -729,7 +729,7 @@
                         
                             <b>16.</b>
                         
-                         Pattern matching
+                         模式匹配
                     </a>
                 
             
@@ -746,7 +746,23 @@
                         
                             <b>16.1.</b>
                         
-                         Destructuring and guards
+                         解构和解构条件
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="16.2" data-path="match/struct.html">
+            
+                
+                    <a href="./match/struct.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>16.2.</b>
+                        
+                         解构结构体
                     </a>
                 
             
@@ -767,7 +783,7 @@
                         
                             <b>17.</b>
                         
-                         Structures
+                         结构体
                     </a>
                 
             
@@ -784,7 +800,7 @@
                         
                             <b>17.1.</b>
                         
-                         Visibility
+                         可见性
                     </a>
                 
             
@@ -805,7 +821,7 @@
                         
                             <b>18.</b>
                         
-                         Generics
+                         泛型
                     </a>
                 
             
@@ -821,7 +837,7 @@
                         
                             <b>19.</b>
                         
-                         Box, stack and heap
+                         Box, 栈和堆
                     </a>
                 
             
@@ -853,7 +869,7 @@
                         
                             <b>21.</b>
                         
-                         Ownership and moves
+                         所有权和转移
                     </a>
                 
             
@@ -870,7 +886,7 @@
                         
                             <b>21.1.</b>
                         
-                         Mutability
+                         可变性
                     </a>
                 
             
@@ -891,7 +907,7 @@
                         
                             <b>22.</b>
                         
-                         Borrowing
+                         借用
                     </a>
                 
             
@@ -908,7 +924,7 @@
                         
                             <b>22.1.</b>
                         
-                         Mutability
+                         可变性
                     </a>
                 
             
@@ -924,7 +940,7 @@
                         
                             <b>22.2.</b>
                         
-                         Freezing
+                         冻结
                     </a>
                 
             
@@ -940,7 +956,7 @@
                         
                             <b>22.3.</b>
                         
-                         Aliasing
+                         别名
                     </a>
                 
             
@@ -956,7 +972,7 @@
                         
                             <b>22.4.</b>
                         
-                         The ref pattern
+                         ref模式
                     </a>
                 
             
@@ -977,7 +993,7 @@
                         
                             <b>23.</b>
                         
-                         Lifetimes
+                         生命期
                     </a>
                 
             
@@ -994,7 +1010,7 @@
                         
                             <b>23.1.</b>
                         
-                         The borrow checker
+                         借用检查(borrow checker)
                     </a>
                 
             
@@ -1010,7 +1026,7 @@
                         
                             <b>23.2.</b>
                         
-                         Functions
+                         函数
                     </a>
                 
             
@@ -1026,7 +1042,7 @@
                         
                             <b>23.3.</b>
                         
-                         Structs
+                         结构体
                     </a>
                 
             
@@ -1047,7 +1063,7 @@
                         
                             <b>24.</b>
                         
-                         Global constants
+                         全局常量
                     </a>
                 
             
@@ -1063,7 +1079,7 @@
                         
                             <b>25.</b>
                         
-                         Methods
+                         方法
                     </a>
                 
             
@@ -1079,7 +1095,7 @@
                         
                             <b>26.</b>
                         
-                         Enums
+                         枚举
                     </a>
                 
             
@@ -1096,7 +1112,7 @@
                         
                             <b>26.1.</b>
                         
-                         C-like
+                         类C枚举
                     </a>
                 
             
@@ -1109,15 +1125,15 @@
         </li>
     
         
-        <li class="chapter " data-level="27" data-path="fail.html">
+        <li class="chapter " data-level="27" data-path="panic.html">
             
                 
-                    <a href="./fail.html">
+                    <a href="./panic.html">
                         <i class="fa fa-check"></i>
                         
                             <b>27.</b>
                         
-                         `fail!`
+                         叛逆`panic!`
                     </a>
                 
             
@@ -1133,7 +1149,7 @@
                         
                             <b>28.</b>
                         
-                         `Option`
+                         可空`Option`
                     </a>
                 
             
@@ -1149,7 +1165,7 @@
                         
                             <b>29.</b>
                         
-                         Arrays and Slices
+                         数组和切片(slice)
                     </a>
                 
             
@@ -1165,7 +1181,7 @@
                         
                             <b>30.</b>
                         
-                         Traits
+                         接口(Traits)
                     </a>
                 
             
@@ -1182,7 +1198,7 @@
                         
                             <b>30.1.</b>
                         
-                         Deriving
+                         衍生(deriving)
                     </a>
                 
             
@@ -1203,7 +1219,7 @@
                         
                             <b>31.</b>
                         
-                         Operator Overloading
+                         操作符重载
                     </a>
                 
             
@@ -1219,7 +1235,7 @@
                         
                             <b>32.</b>
                         
-                         Bounds
+                         边界(Bounds)
                     </a>
                 
             
@@ -1235,7 +1251,7 @@
                         
                             <b>33.</b>
                         
-                         Drop
+                         析构Drop
                     </a>
                 
             
@@ -1251,7 +1267,7 @@
                         
                             <b>34.</b>
                         
-                         Iterators
+                         迭代器
                     </a>
                 
             
@@ -1267,7 +1283,7 @@
                         
                             <b>35.</b>
                         
-                         Closures
+                         闭包
                     </a>
                 
             
@@ -1283,7 +1299,7 @@
                         
                             <b>36.</b>
                         
-                         Higher Order Functions
+                         高阶函数
                     </a>
                 
             
@@ -1315,7 +1331,7 @@
                         
                             <b>38.</b>
                         
-                         Strings
+                         字符串
                     </a>
                 
             
@@ -1331,7 +1347,7 @@
                         
                             <b>39.</b>
                         
-                         Clone
+                         克隆
                     </a>
                 
             
@@ -1339,15 +1355,15 @@
         </li>
     
         
-        <li class="chapter " data-level="40" data-path="tasks.html">
+        <li class="chapter " data-level="40" data-path="threads.html">
             
                 
-                    <a href="./tasks.html">
+                    <a href="./threads.html">
                         <i class="fa fa-check"></i>
                         
                             <b>40.</b>
                         
-                         Tasks
+                         线程
                     </a>
                 
             
@@ -1363,7 +1379,7 @@
                         
                             <b>41.</b>
                         
-                         Channels
+                         通道
                     </a>
                 
             
@@ -1379,7 +1395,7 @@
                         
                             <b>42.</b>
                         
-                         Timers
+                         定时器
                     </a>
                 
             
@@ -1395,7 +1411,7 @@
                         
                             <b>43.</b>
                         
-                         Unix sockets
+                         套接字
                     </a>
                 
             
@@ -1449,7 +1465,7 @@
                         
                             <b>45.</b>
                         
-                         Path
+                         路径
                     </a>
                 
             
@@ -1465,7 +1481,7 @@
                         
                             <b>46.</b>
                         
-                         File I/O
+                         文件I/O
                     </a>
                 
             
@@ -1519,7 +1535,7 @@
                         
                             <b>47.</b>
                         
-                         Child processes
+                         子进程
                     </a>
                 
             
@@ -1536,7 +1552,7 @@
                         
                             <b>47.1.</b>
                         
-                         Pipes
+                         管道
                     </a>
                 
             
@@ -1552,7 +1568,7 @@
                         
                             <b>47.2.</b>
                         
-                         Wait
+                         等待
                     </a>
                 
             
@@ -1573,7 +1589,7 @@
                         
                             <b>48.</b>
                         
-                         Filesystem Operations
+                         文件系统
                     </a>
                 
             
@@ -1589,7 +1605,7 @@
                         
                             <b>49.</b>
                         
-                         Staging Area
+                         其他
                     </a>
                 
             
@@ -1606,7 +1622,7 @@
                         
                             <b>49.1.</b>
                         
-                         Benchmarking
+                         性能测试
                     </a>
                 
             
@@ -1622,7 +1638,7 @@
                         
                             <b>49.2.</b>
                         
-                         Foreign Function Interface
+                         外部函数接口FFI
                     </a>
                 
             
@@ -1638,7 +1654,7 @@
                         
                             <b>49.3.</b>
                         
-                         macro_rules!
+                         定义宏`macro_rules!`
                     </a>
                 
             
@@ -1654,7 +1670,7 @@
                         
                             <b>49.4.</b>
                         
-                         Random
+                         随机数
                     </a>
                 
             
@@ -1686,7 +1702,7 @@
                         
                             <b>49.6.</b>
                         
-                         Testing
+                         测试
                     </a>
                 
             
@@ -1702,7 +1718,7 @@
                         
                             <b>49.7.</b>
                         
-                         Unsafe operations
+                         不安全操作
                     </a>
                 
             
@@ -1718,7 +1734,7 @@
                         
                             <b>49.8.</b>
                         
-                         JSON parsing
+                         解析JSON
                     </a>
                 
             
@@ -1788,7 +1804,7 @@
                         
                             <b>49.9.</b>
                         
-                         Formatting
+                         格式化文本
                     </a>
                 
             
@@ -1804,7 +1820,7 @@
                         
                             <b>49.10.</b>
                         
-                         HashMap
+                         哈希表(HashMap)
                     </a>
                 
             
@@ -1837,23 +1853,7 @@
                         
                             <b>49.10.2.</b>
                         
-                         HashSet
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="49.10.3" data-path="staging/hash/smallintmap.html">
-            
-                
-                    <a href="./staging/hash/smallintmap.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>49.10.3.</b>
-                        
-                         SmallIntMap
+                         哈希集(HashSet)
                     </a>
                 
             
@@ -1879,7 +1879,7 @@
                         
                             <b>50.</b>
                         
-                         TODO
+                         待续
                     </a>
                 
             
@@ -1890,7 +1890,7 @@
         
         <li class="chapter " data-level="50.1" >
             
-            <span><b>50.1.</b> Program arguments</span>
+            <span><b>50.1.</b> 程序参数</span>
             
             
         </li>
@@ -1898,7 +1898,7 @@
         
         <li class="chapter " data-level="50.2" >
             
-            <span><b>50.2.</b> assert! and debug_assert!</span>
+            <span><b>50.2.</b> `assert!`和`debug_assert!`</span>
             
             
         </li>
@@ -1906,7 +1906,7 @@
         
         <li class="chapter " data-level="50.3" >
             
-            <span><b>50.3.</b> Comments</span>
+            <span><b>50.3.</b> 注释</span>
             
             
         </li>
@@ -1914,7 +1914,7 @@
         
         <li class="chapter " data-level="50.4" >
             
-            <span><b>50.4.</b> Green threads</span>
+            <span><b>50.4.</b> 绿色线程</span>
             
             
         </li>
@@ -1922,7 +1922,7 @@
         
         <li class="chapter " data-level="50.5" >
             
-            <span><b>50.5.</b> Logging</span>
+            <span><b>50.5.</b> 日志</span>
             
             
         </li>
@@ -1930,7 +1930,7 @@
         
         <li class="chapter " data-level="50.6" >
             
-            <span><b>50.6.</b> Reference counting</span>
+            <span><b>50.6.</b> 引用计数</span>
             
             
         </li>
@@ -1938,7 +1938,7 @@
         
         <li class="chapter " data-level="50.7" >
             
-            <span><b>50.7.</b> Regex</span>
+            <span><b>50.7.</b> 正则表达式</span>
             
             
         </li>
@@ -1962,7 +1962,7 @@
         
         <li class="chapter " data-level="50.10" >
             
-            <span><b>50.10.</b> Standard I/O</span>
+            <span><b>50.10.</b> 标准I/O</span>
             
             
         </li>
@@ -1988,222 +1988,222 @@
             <div class="page-wrapper" tabindex="-1">
                 <div class="book-progress">
     <div class="bar">
-        <div class="inner" style="width: 47.524752475247524%;min-width: 46.53465346534654%;"></div>
+        <div class="inner" style="width: 48.51485148514851%;min-width: 47.524752475247524%;"></div>
     </div>
     <div class="chapters">
     
         <a href="./index.html" title="Introduction" class="chapter done new-chapter" data-progress="0" style="left: 0%;"></a>
     
-        <a href="./hello.html" title="Hello World" class="chapter done new-chapter" data-progress="1" style="left: 0.9900990099009901%;"></a>
+        <a href="./hello.html" title="你好世界" class="chapter done new-chapter" data-progress="1" style="left: 0.9900990099009901%;"></a>
     
-        <a href="./print.html" title="Formatted print" class="chapter done new-chapter" data-progress="2" style="left: 1.9801980198019802%;"></a>
+        <a href="./print.html" title="格式化输出" class="chapter done new-chapter" data-progress="2" style="left: 1.9801980198019802%;"></a>
     
-        <a href="./literals.html" title="Literals and operators" class="chapter done new-chapter" data-progress="3" style="left: 2.9702970297029703%;"></a>
+        <a href="./literals.html" title="字面常量和操作符" class="chapter done new-chapter" data-progress="3" style="left: 2.9702970297029703%;"></a>
     
-        <a href="./variables.html" title="Variables" class="chapter done new-chapter" data-progress="4" style="left: 3.9603960396039604%;"></a>
+        <a href="./variables.html" title="变量" class="chapter done new-chapter" data-progress="4" style="left: 3.9603960396039604%;"></a>
     
-        <a href="./variables/mut.html" title="Mutability" class="chapter done " data-progress="4.1" style="left: 4.9504950495049505%;"></a>
+        <a href="./variables/mut.html" title="可变性" class="chapter done " data-progress="4.1" style="left: 4.9504950495049505%;"></a>
     
-        <a href="./variables/scope.html" title="Scope and shadowing" class="chapter done " data-progress="4.2" style="left: 5.9405940594059405%;"></a>
+        <a href="./variables/scope.html" title="作用域和覆盖" class="chapter done " data-progress="4.2" style="left: 5.9405940594059405%;"></a>
     
-        <a href="./variables/declare.html" title="Declare first" class="chapter done " data-progress="4.3" style="left: 6.930693069306931%;"></a>
+        <a href="./variables/declare.html" title="先声明再使用" class="chapter done " data-progress="4.3" style="left: 6.930693069306931%;"></a>
     
-        <a href="./type.html" title="Types" class="chapter done new-chapter" data-progress="5" style="left: 7.920792079207921%;"></a>
+        <a href="./type.html" title="类型" class="chapter done new-chapter" data-progress="5" style="left: 7.920792079207921%;"></a>
     
-        <a href="./type/cast.html" title="Casting" class="chapter done " data-progress="5.1" style="left: 8.910891089108912%;"></a>
+        <a href="./type/cast.html" title="转换" class="chapter done " data-progress="5.1" style="left: 8.910891089108912%;"></a>
     
-        <a href="./type/literals.html" title="Literals" class="chapter done " data-progress="5.2" style="left: 9.900990099009901%;"></a>
+        <a href="./type/literals.html" title="字面常量" class="chapter done " data-progress="5.2" style="left: 9.900990099009901%;"></a>
     
-        <a href="./type/inference.html" title="Inference" class="chapter done " data-progress="5.3" style="left: 10.891089108910892%;"></a>
+        <a href="./type/inference.html" title="推断" class="chapter done " data-progress="5.3" style="left: 10.891089108910892%;"></a>
     
-        <a href="./type/alias.html" title="Alias" class="chapter done " data-progress="5.4" style="left: 11.881188118811881%;"></a>
+        <a href="./type/alias.html" title="别名" class="chapter done " data-progress="5.4" style="left: 11.881188118811881%;"></a>
     
-        <a href="./expression.html" title="Expressions" class="chapter done new-chapter" data-progress="6" style="left: 12.871287128712872%;"></a>
+        <a href="./expression.html" title="表达式" class="chapter done new-chapter" data-progress="6" style="left: 12.871287128712872%;"></a>
     
-        <a href="./if-else.html" title="If/else" class="chapter done new-chapter" data-progress="7" style="left: 13.861386138613861%;"></a>
+        <a href="./if-else.html" title="if和else" class="chapter done new-chapter" data-progress="7" style="left: 13.861386138613861%;"></a>
     
-        <a href="./loop.html" title="Loop" class="chapter done new-chapter" data-progress="8" style="left: 14.851485148514852%;"></a>
+        <a href="./loop.html" title="循环loop" class="chapter done new-chapter" data-progress="8" style="left: 14.851485148514852%;"></a>
     
-        <a href="./loop/nested.html" title="Nesting and labels" class="chapter done " data-progress="8.1" style="left: 15.841584158415841%;"></a>
+        <a href="./loop/nested.html" title="嵌套和标签" class="chapter done " data-progress="8.1" style="left: 15.841584158415841%;"></a>
     
-        <a href="./while.html" title="While" class="chapter done new-chapter" data-progress="9" style="left: 16.831683168316832%;"></a>
+        <a href="./while.html" title="循环while" class="chapter done new-chapter" data-progress="9" style="left: 16.831683168316832%;"></a>
     
-        <a href="./for.html" title="For and range" class="chapter done " data-progress="10" style="left: 17.821782178217823%;"></a>
+        <a href="./for.html" title="for和range" class="chapter done " data-progress="10" style="left: 17.821782178217823%;"></a>
     
-        <a href="./fn.html" title="Functions" class="chapter done " data-progress="11" style="left: 18.81188118811881%;"></a>
+        <a href="./fn.html" title="函数" class="chapter done " data-progress="11" style="left: 18.81188118811881%;"></a>
     
-        <a href="./fn/unused.html" title="Unused" class="chapter done " data-progress="11.1" style="left: 19.801980198019802%;"></a>
+        <a href="./fn/unused.html" title="未用到" class="chapter done " data-progress="11.1" style="left: 19.801980198019802%;"></a>
     
-        <a href="./mod.html" title="Modules" class="chapter done " data-progress="12" style="left: 20.792079207920793%;"></a>
+        <a href="./mod.html" title="模块(Modules)" class="chapter done " data-progress="12" style="left: 20.792079207920793%;"></a>
     
-        <a href="./mod/visibility.html" title="Visibility" class="chapter done " data-progress="12.1" style="left: 21.782178217821784%;"></a>
+        <a href="./mod/visibility.html" title="可见性" class="chapter done " data-progress="12.1" style="left: 21.782178217821784%;"></a>
     
-        <a href="./mod/use.html" title="The `use` import" class="chapter done " data-progress="12.2" style="left: 22.77227722772277%;"></a>
+        <a href="./mod/use.html" title="导入" class="chapter done " data-progress="12.2" style="left: 22.77227722772277%;"></a>
     
-        <a href="./mod/super.html" title="`super` and `self`" class="chapter done " data-progress="12.3" style="left: 23.762376237623762%;"></a>
+        <a href="./mod/super.html" title="super和self" class="chapter done " data-progress="12.3" style="left: 23.762376237623762%;"></a>
     
-        <a href="./mod/split.html" title="File hierarchy" class="chapter done " data-progress="12.4" style="left: 24.752475247524753%;"></a>
+        <a href="./mod/split.html" title="文件层次" class="chapter done " data-progress="12.4" style="left: 24.752475247524753%;"></a>
     
-        <a href="./crates.html" title="Crates" class="chapter done " data-progress="13" style="left: 25.742574257425744%;"></a>
+        <a href="./crates.html" title="库(Crates)" class="chapter done " data-progress="13" style="left: 25.742574257425744%;"></a>
     
-        <a href="./crates/lib.html" title="Library" class="chapter done " data-progress="13.1" style="left: 26.73267326732673%;"></a>
+        <a href="./crates/lib.html" title="库" class="chapter done " data-progress="13.1" style="left: 26.73267326732673%;"></a>
     
         <a href="./crates/link.html" title="`extern crate`" class="chapter done " data-progress="13.2" style="left: 27.722772277227723%;"></a>
     
-        <a href="./attribute.html" title="Attributes" class="chapter done " data-progress="14" style="left: 28.712871287128714%;"></a>
+        <a href="./attribute.html" title="属性(Attributes)" class="chapter done " data-progress="14" style="left: 28.712871287128714%;"></a>
     
-        <a href="./attribute/crate.html" title="Crates" class="chapter done " data-progress="14.1" style="left: 29.702970297029704%;"></a>
+        <a href="./attribute/crate.html" title="库" class="chapter done " data-progress="14.1" style="left: 29.702970297029704%;"></a>
     
         <a href="./attribute/cfg.html" title="`cfg`" class="chapter done " data-progress="14.2" style="left: 30.693069306930692%;"></a>
     
         <a href="./attribute/cfg/custom.html" title="Custom" class="chapter done " data-progress="14.2.1" style="left: 31.683168316831683%;"></a>
     
-        <a href="./tuples.html" title="Tuples" class="chapter done " data-progress="15" style="left: 32.67326732673267%;"></a>
+        <a href="./tuples.html" title="元组(Tuples)" class="chapter done " data-progress="15" style="left: 32.67326732673267%;"></a>
     
-        <a href="./match.html" title="Pattern matching" class="chapter done " data-progress="16" style="left: 33.663366336633665%;"></a>
+        <a href="./match.html" title="模式匹配" class="chapter done " data-progress="16" style="left: 33.663366336633665%;"></a>
     
-        <a href="./match/guard.html" title="Destructuring and guards" class="chapter done " data-progress="16.1" style="left: 34.65346534653465%;"></a>
+        <a href="./match/guard.html" title="解构和解构条件" class="chapter done " data-progress="16.1" style="left: 34.65346534653465%;"></a>
     
-        <a href="./structs.html" title="Structures" class="chapter done " data-progress="17" style="left: 35.64356435643565%;"></a>
+        <a href="./match/struct.html" title="解构结构体" class="chapter done " data-progress="16.2" style="left: 35.64356435643565%;"></a>
     
-        <a href="./structs/visibility.html" title="Visibility" class="chapter done " data-progress="17.1" style="left: 36.633663366336634%;"></a>
+        <a href="./structs.html" title="结构体" class="chapter done " data-progress="17" style="left: 36.633663366336634%;"></a>
     
-        <a href="./generics.html" title="Generics" class="chapter done " data-progress="18" style="left: 37.62376237623762%;"></a>
+        <a href="./structs/visibility.html" title="可见性" class="chapter done " data-progress="17.1" style="left: 37.62376237623762%;"></a>
     
-        <a href="./box.html" title="Box, stack and heap" class="chapter done " data-progress="19" style="left: 38.613861386138616%;"></a>
+        <a href="./generics.html" title="泛型" class="chapter done " data-progress="18" style="left: 38.613861386138616%;"></a>
     
-        <a href="./raii.html" title="RAII" class="chapter done " data-progress="20" style="left: 39.603960396039604%;"></a>
+        <a href="./box.html" title="Box, 栈和堆" class="chapter done " data-progress="19" style="left: 39.603960396039604%;"></a>
     
-        <a href="./move.html" title="Ownership and moves" class="chapter done " data-progress="21" style="left: 40.59405940594059%;"></a>
+        <a href="./raii.html" title="RAII" class="chapter done " data-progress="20" style="left: 40.59405940594059%;"></a>
     
-        <a href="./move/mut.html" title="Mutability" class="chapter done " data-progress="21.1" style="left: 41.584158415841586%;"></a>
+        <a href="./move.html" title="所有权和转移" class="chapter done " data-progress="21" style="left: 41.584158415841586%;"></a>
     
-        <a href="./borrow.html" title="Borrowing" class="chapter done " data-progress="22" style="left: 42.57425742574257%;"></a>
+        <a href="./move/mut.html" title="可变性" class="chapter done " data-progress="21.1" style="left: 42.57425742574257%;"></a>
     
-        <a href="./borrow/mut.html" title="Mutability" class="chapter done " data-progress="22.1" style="left: 43.56435643564357%;"></a>
+        <a href="./borrow.html" title="借用" class="chapter done " data-progress="22" style="left: 43.56435643564357%;"></a>
     
-        <a href="./borrow/freeze.html" title="Freezing" class="chapter done " data-progress="22.2" style="left: 44.554455445544555%;"></a>
+        <a href="./borrow/mut.html" title="可变性" class="chapter done " data-progress="22.1" style="left: 44.554455445544555%;"></a>
     
-        <a href="./borrow/alias.html" title="Aliasing" class="chapter done " data-progress="22.3" style="left: 45.54455445544554%;"></a>
+        <a href="./borrow/freeze.html" title="冻结" class="chapter done " data-progress="22.2" style="left: 45.54455445544554%;"></a>
     
-        <a href="./borrow/ref.html" title="The ref pattern" class="chapter done " data-progress="22.4" style="left: 46.53465346534654%;"></a>
+        <a href="./borrow/alias.html" title="别名" class="chapter done " data-progress="22.3" style="left: 46.53465346534654%;"></a>
     
-        <a href="./lifetime.html" title="Lifetimes" class="chapter done " data-progress="23" style="left: 47.524752475247524%;"></a>
+        <a href="./borrow/ref.html" title="ref模式" class="chapter done " data-progress="22.4" style="left: 47.524752475247524%;"></a>
     
-        <a href="./lifetime/borrow.html" title="The borrow checker" class="chapter  " data-progress="23.1" style="left: 48.51485148514851%;"></a>
+        <a href="./lifetime.html" title="生命期" class="chapter done " data-progress="23" style="left: 48.51485148514851%;"></a>
     
-        <a href="./lifetime/fn.html" title="Functions" class="chapter  " data-progress="23.2" style="left: 49.504950495049506%;"></a>
+        <a href="./lifetime/borrow.html" title="借用检查(borrow checker)" class="chapter  " data-progress="23.1" style="left: 49.504950495049506%;"></a>
     
-        <a href="./lifetime/struct.html" title="Structs" class="chapter  " data-progress="23.3" style="left: 50.495049504950494%;"></a>
+        <a href="./lifetime/fn.html" title="函数" class="chapter  " data-progress="23.2" style="left: 50.495049504950494%;"></a>
     
-        <a href="./constants.html" title="Global constants" class="chapter  " data-progress="24" style="left: 51.48514851485149%;"></a>
+        <a href="./lifetime/struct.html" title="结构体" class="chapter  " data-progress="23.3" style="left: 51.48514851485149%;"></a>
     
-        <a href="./methods.html" title="Methods" class="chapter  " data-progress="25" style="left: 52.475247524752476%;"></a>
+        <a href="./constants.html" title="全局常量" class="chapter  " data-progress="24" style="left: 52.475247524752476%;"></a>
     
-        <a href="./enum.html" title="Enums" class="chapter  " data-progress="26" style="left: 53.46534653465346%;"></a>
+        <a href="./methods.html" title="方法" class="chapter  " data-progress="25" style="left: 53.46534653465346%;"></a>
     
-        <a href="./enum/c-like.html" title="C-like" class="chapter  " data-progress="26.1" style="left: 54.45544554455446%;"></a>
+        <a href="./enum.html" title="枚举" class="chapter  " data-progress="26" style="left: 54.45544554455446%;"></a>
     
-        <a href="./fail.html" title="`fail!`" class="chapter  " data-progress="27" style="left: 55.445544554455445%;"></a>
+        <a href="./enum/c-like.html" title="类C枚举" class="chapter  " data-progress="26.1" style="left: 55.445544554455445%;"></a>
     
-        <a href="./option.html" title="`Option`" class="chapter  " data-progress="28" style="left: 56.43564356435643%;"></a>
+        <a href="./panic.html" title="叛逆`panic!`" class="chapter  " data-progress="27" style="left: 56.43564356435643%;"></a>
     
-        <a href="./array.html" title="Arrays and Slices" class="chapter  " data-progress="29" style="left: 57.42574257425743%;"></a>
+        <a href="./option.html" title="可空`Option`" class="chapter  " data-progress="28" style="left: 57.42574257425743%;"></a>
     
-        <a href="./trait.html" title="Traits" class="chapter  " data-progress="30" style="left: 58.415841584158414%;"></a>
+        <a href="./array.html" title="数组和切片(slice)" class="chapter  " data-progress="29" style="left: 58.415841584158414%;"></a>
     
-        <a href="./trait/deriving.html" title="Deriving" class="chapter  " data-progress="30.1" style="left: 59.40594059405941%;"></a>
+        <a href="./trait.html" title="接口(Traits)" class="chapter  " data-progress="30" style="left: 59.40594059405941%;"></a>
     
-        <a href="./ops.html" title="Operator Overloading" class="chapter  " data-progress="31" style="left: 60.396039603960396%;"></a>
+        <a href="./trait/deriving.html" title="衍生(deriving)" class="chapter  " data-progress="30.1" style="left: 60.396039603960396%;"></a>
     
-        <a href="./bounds.html" title="Bounds" class="chapter  " data-progress="32" style="left: 61.386138613861384%;"></a>
+        <a href="./ops.html" title="操作符重载" class="chapter  " data-progress="31" style="left: 61.386138613861384%;"></a>
     
-        <a href="./drop.html" title="Drop" class="chapter  " data-progress="33" style="left: 62.37623762376238%;"></a>
+        <a href="./bounds.html" title="边界(Bounds)" class="chapter  " data-progress="32" style="left: 62.37623762376238%;"></a>
     
-        <a href="./iter.html" title="Iterators" class="chapter  " data-progress="34" style="left: 63.366336633663366%;"></a>
+        <a href="./drop.html" title="析构Drop" class="chapter  " data-progress="33" style="left: 63.366336633663366%;"></a>
     
-        <a href="./closures.html" title="Closures" class="chapter  " data-progress="35" style="left: 64.35643564356435%;"></a>
+        <a href="./iter.html" title="迭代器" class="chapter  " data-progress="34" style="left: 64.35643564356435%;"></a>
     
-        <a href="./hof.html" title="Higher Order Functions" class="chapter  " data-progress="36" style="left: 65.34653465346534%;"></a>
+        <a href="./closures.html" title="闭包" class="chapter  " data-progress="35" style="left: 65.34653465346534%;"></a>
     
-        <a href="./vec.html" title="Vectors" class="chapter  " data-progress="37" style="left: 66.33663366336634%;"></a>
+        <a href="./hof.html" title="高阶函数" class="chapter  " data-progress="36" style="left: 66.33663366336634%;"></a>
     
-        <a href="./str.html" title="Strings" class="chapter  " data-progress="38" style="left: 67.32673267326733%;"></a>
+        <a href="./vec.html" title="Vectors" class="chapter  " data-progress="37" style="left: 67.32673267326733%;"></a>
     
-        <a href="./clone.html" title="Clone" class="chapter  " data-progress="39" style="left: 68.31683168316832%;"></a>
+        <a href="./str.html" title="字符串" class="chapter  " data-progress="38" style="left: 68.31683168316832%;"></a>
     
-        <a href="./tasks.html" title="Tasks" class="chapter  " data-progress="40" style="left: 69.3069306930693%;"></a>
+        <a href="./clone.html" title="克隆" class="chapter  " data-progress="39" style="left: 69.3069306930693%;"></a>
     
-        <a href="./channels.html" title="Channels" class="chapter  " data-progress="41" style="left: 70.29702970297029%;"></a>
+        <a href="./threads.html" title="线程" class="chapter  " data-progress="40" style="left: 70.29702970297029%;"></a>
     
-        <a href="./timers.html" title="Timers" class="chapter  " data-progress="42" style="left: 71.2871287128713%;"></a>
+        <a href="./channels.html" title="通道" class="chapter  " data-progress="41" style="left: 71.2871287128713%;"></a>
     
-        <a href="./sockets.html" title="Unix sockets" class="chapter  " data-progress="43" style="left: 72.27722772277228%;"></a>
+        <a href="./timers.html" title="定时器" class="chapter  " data-progress="42" style="left: 72.27722772277228%;"></a>
     
-        <a href="./result.html" title="`Result`" class="chapter  " data-progress="44" style="left: 73.26732673267327%;"></a>
+        <a href="./sockets.html" title="套接字" class="chapter  " data-progress="43" style="left: 73.26732673267327%;"></a>
     
-        <a href="./result/try.html" title="`try!`" class="chapter  " data-progress="44.1" style="left: 74.25742574257426%;"></a>
+        <a href="./result.html" title="`Result`" class="chapter  " data-progress="44" style="left: 74.25742574257426%;"></a>
     
-        <a href="./path.html" title="Path" class="chapter  " data-progress="45" style="left: 75.24752475247524%;"></a>
+        <a href="./result/try.html" title="`try!`" class="chapter  " data-progress="44.1" style="left: 75.24752475247524%;"></a>
     
-        <a href="./file.html" title="File I/O" class="chapter  " data-progress="46" style="left: 76.23762376237623%;"></a>
+        <a href="./path.html" title="路径" class="chapter  " data-progress="45" style="left: 76.23762376237623%;"></a>
     
-        <a href="./file/open.html" title="`open`" class="chapter  " data-progress="46.1" style="left: 77.22772277227723%;"></a>
+        <a href="./file.html" title="文件I/O" class="chapter  " data-progress="46" style="left: 77.22772277227723%;"></a>
     
-        <a href="./file/create.html" title="`create`" class="chapter  " data-progress="46.2" style="left: 78.21782178217822%;"></a>
+        <a href="./file/open.html" title="`open`" class="chapter  " data-progress="46.1" style="left: 78.21782178217822%;"></a>
     
-        <a href="./process.html" title="Child processes" class="chapter  " data-progress="47" style="left: 79.20792079207921%;"></a>
+        <a href="./file/create.html" title="`create`" class="chapter  " data-progress="46.2" style="left: 79.20792079207921%;"></a>
     
-        <a href="./process/pipe.html" title="Pipes" class="chapter  " data-progress="47.1" style="left: 80.1980198019802%;"></a>
+        <a href="./process.html" title="子进程" class="chapter  " data-progress="47" style="left: 80.1980198019802%;"></a>
     
-        <a href="./process/wait.html" title="Wait" class="chapter  " data-progress="47.2" style="left: 81.18811881188118%;"></a>
+        <a href="./process/pipe.html" title="管道" class="chapter  " data-progress="47.1" style="left: 81.18811881188118%;"></a>
     
-        <a href="./fs.html" title="Filesystem Operations" class="chapter  " data-progress="48" style="left: 82.17821782178218%;"></a>
+        <a href="./process/wait.html" title="等待" class="chapter  " data-progress="47.2" style="left: 82.17821782178218%;"></a>
     
-        <a href="./staging.html" title="Staging Area" class="chapter  " data-progress="49" style="left: 83.16831683168317%;"></a>
+        <a href="./fs.html" title="文件系统" class="chapter  " data-progress="48" style="left: 83.16831683168317%;"></a>
     
-        <a href="./staging/bench.html" title="Benchmarking" class="chapter  " data-progress="49.1" style="left: 84.15841584158416%;"></a>
+        <a href="./staging.html" title="其他" class="chapter  " data-progress="49" style="left: 84.15841584158416%;"></a>
     
-        <a href="./staging/ffi.html" title="Foreign Function Interface" class="chapter  " data-progress="49.2" style="left: 85.14851485148515%;"></a>
+        <a href="./staging/bench.html" title="性能测试" class="chapter  " data-progress="49.1" style="left: 85.14851485148515%;"></a>
     
-        <a href="./staging/macros.html" title="macro_rules!" class="chapter  " data-progress="49.3" style="left: 86.13861386138613%;"></a>
+        <a href="./staging/ffi.html" title="外部函数接口FFI" class="chapter  " data-progress="49.2" style="left: 86.13861386138613%;"></a>
     
-        <a href="./staging/rand.html" title="Random" class="chapter  " data-progress="49.4" style="left: 87.12871287128714%;"></a>
+        <a href="./staging/macros.html" title="定义宏`macro_rules!`" class="chapter  " data-progress="49.3" style="left: 87.12871287128714%;"></a>
     
-        <a href="./staging/simd.html" title="SIMD" class="chapter  " data-progress="49.5" style="left: 88.11881188118812%;"></a>
+        <a href="./staging/rand.html" title="随机数" class="chapter  " data-progress="49.4" style="left: 88.11881188118812%;"></a>
     
-        <a href="./staging/test.html" title="Testing" class="chapter  " data-progress="49.6" style="left: 89.10891089108911%;"></a>
+        <a href="./staging/simd.html" title="SIMD" class="chapter  " data-progress="49.5" style="left: 89.10891089108911%;"></a>
     
-        <a href="./staging/unsafe.html" title="Unsafe operations" class="chapter  " data-progress="49.7" style="left: 90.0990099009901%;"></a>
+        <a href="./staging/test.html" title="测试" class="chapter  " data-progress="49.6" style="left: 90.0990099009901%;"></a>
     
-        <a href="./staging/json.html" title="JSON parsing" class="chapter  " data-progress="49.8" style="left: 91.08910891089108%;"></a>
+        <a href="./staging/unsafe.html" title="不安全操作" class="chapter  " data-progress="49.7" style="left: 91.08910891089108%;"></a>
     
-        <a href="./staging/json/json-enum.html" title="`Json`" class="chapter  " data-progress="49.8.1" style="left: 92.07920792079207%;"></a>
+        <a href="./staging/json.html" title="解析JSON" class="chapter  " data-progress="49.8" style="left: 92.07920792079207%;"></a>
     
-        <a href="./staging/json/decodable.html" title="`Decodable`" class="chapter  " data-progress="49.8.2" style="left: 93.06930693069307%;"></a>
+        <a href="./staging/json/json-enum.html" title="`Json`" class="chapter  " data-progress="49.8.1" style="left: 93.06930693069307%;"></a>
     
-        <a href="./staging/json/encodable.html" title="`Encodable`" class="chapter  " data-progress="49.8.3" style="left: 94.05940594059406%;"></a>
+        <a href="./staging/json/decodable.html" title="`Decodable`" class="chapter  " data-progress="49.8.2" style="left: 94.05940594059406%;"></a>
     
-        <a href="./staging/fmt.html" title="Formatting" class="chapter  " data-progress="49.9" style="left: 95.04950495049505%;"></a>
+        <a href="./staging/json/encodable.html" title="`Encodable`" class="chapter  " data-progress="49.8.3" style="left: 95.04950495049505%;"></a>
     
-        <a href="./staging/hash.html" title="HashMap" class="chapter  " data-progress="49.10" style="left: 96.03960396039604%;"></a>
+        <a href="./staging/fmt.html" title="格式化文本" class="chapter  " data-progress="49.9" style="left: 96.03960396039604%;"></a>
     
-        <a href="./staging/hash/alt-key-types.html" title="Alternate/custom key types" class="chapter  " data-progress="49.10.1" style="left: 97.02970297029702%;"></a>
+        <a href="./staging/hash.html" title="哈希表(HashMap)" class="chapter  " data-progress="49.10" style="left: 97.02970297029702%;"></a>
     
-        <a href="./staging/hash/hashset.html" title="HashSet" class="chapter  " data-progress="49.10.2" style="left: 98.01980198019803%;"></a>
+        <a href="./staging/hash/alt-key-types.html" title="Alternate/custom key types" class="chapter  " data-progress="49.10.1" style="left: 98.01980198019803%;"></a>
     
-        <a href="./staging/hash/smallintmap.html" title="SmallIntMap" class="chapter  " data-progress="49.10.3" style="left: 99.00990099009901%;"></a>
+        <a href="./staging/hash/hashset.html" title="哈希集(HashSet)" class="chapter  " data-progress="49.10.2" style="left: 99.00990099009901%;"></a>
     
-        <a href="./todo.html" title="TODO" class="chapter  " data-progress="50" style="left: 100%;"></a>
+        <a href="./todo.html" title="待续" class="chapter  " data-progress="50" style="left: 100%;"></a>
     
     </div>
 </div>
 
                 <div class="page-inner">
                 
-                    <section class="normal" id="section-gitbook_42">
+                    <section class="normal" id="section-gitbook_43">
                     
-                        <h1 id="23-lifetimes">23 Lifetimes</h1>
+                        <h1 id="23-">23 生命期</h1>
 <p>The compiler enforces valid borrowing using its borrow checker. To accomplish
 this, it keeps track of two things:</p>
 <ul>
@@ -2235,7 +2235,7 @@ inserting the lifetime part <code>&#39;a</code> so we can simply type annotate r
 </ul>
 <p>Because the compiler keeps track of the lifetime of referenced objects in the
 type system, it can avoid several memory bugs.</p>
-<p>Haven&#39;t grok what is a lifetime yet? Don&#39;t dismay! See the next page</p>
+<p>Haven&#39;t grokked what a lifetime is yet? Don&#39;t dismay! See the next page.</p>
 
                     
                     </section>
@@ -2245,10 +2245,10 @@ type system, it can avoid several memory bugs.</p>
         </div>
 
         
-        <a href="./borrow/ref.html" class="navigation navigation-prev " aria-label="Previous page: The ref pattern"><i class="fa fa-angle-left"></i></a>
+        <a href="./borrow/ref.html" class="navigation navigation-prev " aria-label="Previous page: ref模式"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./lifetime/borrow.html" class="navigation navigation-next " aria-label="Next page: The borrow checker"><i class="fa fa-angle-right"></i></a>
+        <a href="./lifetime/borrow.html" class="navigation navigation-next " aria-label="Next page: 借用检查(borrow checker)"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

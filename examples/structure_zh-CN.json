@@ -84,7 +84,7 @@
   { "id": "vec", "title": "Vectors", "children": null },
   { "id": "str", "title": "字符串", "children": null },
   { "id": "clone", "title": "克隆", "children": null },
-  { "id": "tasks", "title": "任务", "children": null },
+  { "id": "threads", "title": "线程", "children": null },
   { "id": "channels", "title": "通道", "children": null },
   { "id": "timers", "title": "定时器", "children": null },
   { "id": "sockets", "title": "套接字", "children": null },
@@ -102,7 +102,7 @@
   ] },
   { "id": "fs", "title": "文件系统", "children": null },
   { "id": "staging", "title": "其他", "children": [
-    { "id": "bench", "title": "基准测试", "children": null  },
+    { "id": "bench", "title": "性能测试", "children": null  },
     { "id": "ffi", "title": "外部函数接口FFI", "children": null  },
     { "id": "macros", "title": "定义宏`macro_rules!`", "children": null  },
     { "id": "rand", "title": "随机数", "children": null  },

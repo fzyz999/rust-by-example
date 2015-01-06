@@ -1,4 +1,4 @@
-模块可被映射到文件或目录层次。让我们把[可见性](/mod/visibility.html)示例代码分散到多个文件：
+妯″潡鍙鏄犲皠鍒版枃浠舵垨鐩綍灞傛銆傝鎴戜滑鎶奫鍙鎬(/mod/visibility.html)绀轰緥浠ｇ爜鍒嗘暎鍒板涓枃浠讹細
 
 ```
 $ tree .
@@ -18,7 +18,7 @@ $ tree .
 
 {my/inaccessible.rs}
 
-检查代码仍像之前一样运作正常：
+妫�鏌ヤ唬鐮佷粛鍍忎箣鍓嶄竴鏍疯繍浣滄甯革細
 
 ```
 $ rustc split.rs && ./split

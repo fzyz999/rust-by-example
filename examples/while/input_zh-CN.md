@@ -1,5 +1,5 @@
-`while`¹Ø¼ü×ÖÓÃÓÚÖ´ÐÐÒ»¸öÌõ¼þÑ­»·¡£
+`while`å…³é”®å­—ç”¨äºŽæ‰§è¡Œä¸€ä¸ªæ¡ä»¶å¾ªçŽ¯ã€‚
 
-ÈÃÎÒÃÇÓÃ`while`Ñ­»·Ð´Ò»¸ö·ÇÖøÃûµÄfizzbuzz³ÌÐò¡£
+è®©æˆ‘ä»¬ç”¨`while`å¾ªçŽ¯å†™ä¸€ä¸ªéžè‘—åçš„fizzbuzzç¨‹åºã€‚
 
 {while.play}

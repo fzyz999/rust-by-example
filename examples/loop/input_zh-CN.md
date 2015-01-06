@@ -1,5 +1,5 @@
-Rust Ìá¹©ÁË `loop` ¹Ø¼ü×ÖÓÃÓÚÖ´ÐÐÎÞÏÞÑ­»·¡£
+Rust æä¾›äº† `loop` å…³é”®å­—ç”¨äºŽæ‰§è¡Œæ— é™å¾ªçŽ¯ã€‚
 
-`break`Óï¾äÓÃÓÚÔÚÈÎÒâÊ±¿ÌÖÕÖ¹Õû¸öÑ­»·£¬`continue`Óï¾äÓÃÓÚÌáÇ°½áÊøµ±Ç°Ñ­»·²¢¿ªÊ¼ÏÂÒ»´ÎÑ­»·¡£
+`break`è¯­å¥ç”¨äºŽåœ¨ä»»æ„æ—¶åˆ»ç»ˆæ­¢æ•´ä¸ªå¾ªçŽ¯ï¼Œ`continue`è¯­å¥ç”¨äºŽæå‰ç»“æŸå½“å‰å¾ªçŽ¯å¹¶å¼€å§‹ä¸‹ä¸€æ¬¡å¾ªçŽ¯ã€‚
 
 {loop.play}

@@ -1,5 +1,3 @@
-The `use` declaration can be used to bind a full path to a new name, for easier
-access.
-`use`Óï¾ä°ÑÒ»¸öÍêÕûÂ·¾¶°ó¶¨µ½Ò»¸öĞÂµÄÃû×Ö£¬·½±ãºóĞøÊ¹ÓÃ¡£
+`use`è¯­å¥æŠŠä¸€ä¸ªå®Œæ•´è·¯å¾„ç»‘å®šåˆ°ä¸€ä¸ªæ–°çš„åå­—ï¼Œæ–¹ä¾¿åç»­ä½¿ç”¨ã€‚
 
 {use.play}

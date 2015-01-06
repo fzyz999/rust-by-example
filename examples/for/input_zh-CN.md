@@ -1,5 +1,5 @@
-`for in`Óï¾äÓÃÓÚ±éÀúµü´úÆ÷£¨Iterator£©¡£µü´úÆ÷ÊÇÒ»¸ö¶èÐÔµÄÖµÉú³ÉÆ÷£¨Ïê¼ûºóÎÄ£©¡£`range`º¯Êý£¨·µ»ØÖµ£©ÊÇ×î³£¼ûµÄµü´úÆ÷Ö®Ò»¡£`range(a, b)`·µ»ØÒ»¸öµü´úÆ÷£¬È¡Öµ´Ó`a`¿ªÊ¼Öð´Î¼Ó1Ö±µ½b£¨²»°üº¬b£©¡£
+`for in`è¯­å¥ç”¨äºŽéåŽ†è¿­ä»£å™¨ï¼ˆIteratorï¼‰ã€‚è¿­ä»£å™¨æ˜¯ä¸€ä¸ªæƒ°æ€§çš„å€¼ç”Ÿæˆå™¨ï¼ˆè¯¦è§åŽæ–‡ï¼‰ã€‚`range`å‡½æ•°ï¼ˆè¿”å›žå€¼ï¼‰æ˜¯æœ€å¸¸è§çš„è¿­ä»£å™¨ä¹‹ä¸€ã€‚`range(a, b)`è¿”å›žä¸€ä¸ªè¿­ä»£å™¨ï¼Œå–å€¼ä»Ž`a`å¼€å§‹é€æ¬¡åŠ 1ç›´åˆ°bï¼ˆä¸åŒ…å«bï¼‰ã€‚
 
-ÈÃÎÒÃÇÐ´Ò»¸öfizzbuzz£¬Ê¹ÓÃ`for`Ñ­»·¶ø²»ÊÇ`while`¡£
+è®©æˆ‘ä»¬å†™ä¸€ä¸ªfizzbuzzï¼Œä½¿ç”¨`for`å¾ªçŽ¯è€Œä¸æ˜¯`while`ã€‚
 
 {for.play}

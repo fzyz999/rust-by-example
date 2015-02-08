@@ -1,15 +1,21 @@
+#![feature(os)]
+#![feature(io)]
+#![feature(std_misc)]
+#![feature(path)]
+#![feature(core)]
+
 #![deny(warnings)]
-#![feature(phase)]
+#![feature(int_uint)]
+#![feature(plugin)]
 
 extern crate regex;
-#[phase(plugin)]
-extern crate regex_macros;
-extern crate serialize;
+
+extern crate "rustc-serialize" as rustc_serialize;
 
 use std::os;
 use example::Example;
 use std::thread::Thread;
-use std::sync::mpsc::channel;
+use std::sync::mpsc;
 
 mod example;
 mod file;
@@ -25,7 +31,7 @@ fn main() {
     }
 
     let examples = Example::get_list(postfix.as_slice());
-    let (tx, rx) = channel();
+    let (tx, rx) = mpsc::channel();
 
     let mut nexamples = 0;
     for (i, example) in examples.into_iter().enumerate() {
@@ -33,9 +39,9 @@ fn main() {
         let count = example.count();
         let postfix = postfix.clone();
 
-        Thread::spawn(move || {
+        let _ = Thread::scoped(move || {
             example.process(vec!(i + 1), tx, 0, String::new(), postfix);
-        }).detach();
+        });
 
         nexamples += count;
     }
